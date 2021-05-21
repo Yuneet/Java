@@ -1,0 +1,10 @@
+package staticClass;
+
+public interface PhoneInterface {
+	final int TINEOUT = 10000;
+	void sendCall();
+	void receiveCall();
+	default void printLogo() {
+		System.out.println("** Phone **");
+	}
+}
